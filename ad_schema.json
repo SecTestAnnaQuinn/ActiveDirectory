@@ -1,0 +1,20 @@
+{
+    "groups" : [
+        {
+            "name": "Audit",
+        }
+    ],
+
+    "users" : [
+
+        {
+            "first_name": "Anna",
+            "last_name": "Quinn",
+            "password": "AMonkey86",
+            "username": "aquinn",
+            "groups":[
+                "Audit"
+            ]
+        }
+    ]
+}
