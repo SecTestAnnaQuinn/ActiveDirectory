@@ -10,12 +10,15 @@
 ```shell
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 
-```
-```shell
 import-Module ADDSDeployment
+
 Install-ADDSForest
 
 ```
 3. Configure Active Directory
     - Established Butterfree.com as Domain
     - Set SafeModeAdministratorPassword
+    - After reset, we need to change the DNS Server address, as it is incorrectly listed as a loopback
+
+    ```Set-DNSClientServerAddress -InterfaceIndex 4  -ServerAddresses *ipofchoice*
+    ```
