@@ -20,7 +20,8 @@ Install-ADDSForest
     - Set SafeModeAdministratorPassword
     - After reset, we need to change the DNS Server address, as it is incorrectly listed as a loopback
 
-```Set-DNSClientServerAddress -InterfaceIndex *number*  -ServerAddresses *ipofchoice*
+```shell
+Set-DNSClientServerAddress -InterfaceIndex *number*  -ServerAddresses *ipofchoice*
 
 ```
 4. Join Workstation to Butterfree Domain
