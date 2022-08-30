@@ -4,7 +4,7 @@ function CreateADGroup(){
     param( [Parameter(Mandatory=$true)] $groupObject )
         
         $name = $groupObject.name 
-        New-ADGroup -name $name -GroupScope  Global
+        New-ADGroup -name $name -GroupScope Global
     }
 
 
@@ -21,19 +21,19 @@ function CreateADUser (){
     $principalname = $username
 
     #Create AD User Object
-     New-ADUser -Name "$name" -GivenName $firstname -Surname $lastname -SamAccountName $samAccountName -UserPrincipalName $principalname@$Global:Domain -AccountPassword (ConvertTo-SecureString $generated_password -AsPlainText -force) -PassThru | Enable-ADAccount 
+     New-ADUser -Name "$name" -GivenName $firstname -Surname $lastname -SamAccountName $samAccountName -UserPrincipalName $principalname@$Global:Domain -AccountPassword (ConvertTo-SecureString $password -AsPlainText -force) -PassThru | Enable-ADAccount 
     
      #add user to appropriate groups
      foreach($group_name in $userObject.groups) {
 
             try {
-                Get-ADGroup -Identify "$group_name"
+                Get-ADGroup -Identity "$group_name"
+                Add-ADGroupMember -Identity $group_name -Members $username
             }
             catch [Microsoft.ActiveDirectory.Management.ADIdentityNotFoundException]
                 {
                     Write-Warning "User $name NOT added to $group_name. Group object not found"
                 }
-        Add-ADGroupMember -Identify $group -Members $username
      }
 
     echo $userObject

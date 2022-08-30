@@ -1,13 +1,12 @@
 {
-    "domain": [
-        {
-            "name": "Butterfree.com"
-        }
-    ],
+    "domain": "Butterfree.com",
 
     "groups" : [
         {
             "name": "Audit"
+        },
+        {
+            "name": "IT_Support"
         }
     ],
 
@@ -18,6 +17,13 @@
             "password": "AMonkey86",
             "groups": [
                 "Audit"
+            ]
+        },
+        {
+            "name": "Bip Pity",
+            "password": "Bobbity234",
+            "groups": [
+                "IT_Support"
             ]
         }
     ]
