@@ -1,4 +1,10 @@
 {
+    "domain": [
+        {
+            "name": "Butterfree.com"
+        }
+    ],
+
     "groups" : [
         {
             "name": "Audit"
@@ -8,10 +14,8 @@
     "users" : [
 
         {
-            "first_name": "Anna",
-            "last_name": "Quinn",
+            "name": "Anna Quinn",
             "password": "AMonkey86",
-            "username": "aquinn",
             "groups": [
                 "Audit"
             ]
