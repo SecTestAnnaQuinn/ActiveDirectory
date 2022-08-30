@@ -7,6 +7,12 @@
         },
         {
             "name": "IT_Support"
+        },
+        {
+            "name": "Administration"
+        },
+        {
+            "name": "CSuite"
         }
     ],
 
@@ -25,6 +31,77 @@
             "groups": [
                 "IT_Support"
             ]
+        },
+        {
+            "name": "Jimmy Johns",
+            "password": "YeetTheWorld32",
+            "groups": [
+                "IT_Support"
+            ]
+        },
+        {
+            "name": "Squidward Tentacles",
+            "password": "PeaceAndQui3t",
+            "groups": [
+                "Administration"
+            ]
+        },
+        {
+            "name": "Doug Dimmadome",
+            "password": "OwnerOfTheDimmsdaleDimmadome",
+            "groups": [
+                "CSuite"
+            ]
+        },
+        {
+            "name": "Pample Mousse",
+            "password": "Grapefruit1",
+            "groups": [
+                "IT_Support"
+            ]
+        },
+        {
+            "name": "Jerry Carlson",
+            "password": "Password123",
+            "groups": [
+                "IT_Support"
+            ]
+        },
+        {
+            "name": "Otter Withadarkside",
+            "password": "Apple1234",
+            "groups": [
+                "Administration"
+            ]
+        },
+        {
+            "name": "Cat Dog",
+            "password": "TotallyS3cure",
+            "groups": [
+                "IT_Support"
+            ]
+        },
+        {
+            "name": "Thea Larson",
+            "password": "MintTea2",
+            "groups": [
+                "Audit"
+            ]
+        },
+        {
+            "name": "Ilove Nutella",
+            "password": "Hazelnut234",
+            "groups": [
+                "IT_Support"
+            ]
+        },
+        {
+            "name": "Aliana Veracruz",
+            "password": "OakWood99",
+            "groups": [
+                "IT_Support"
+            ]
         }
+
     ]
 }
